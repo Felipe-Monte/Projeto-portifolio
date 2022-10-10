@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+@media screen and (min-width: 320px) {
+    .preloader {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-color: #1c1c1c;
+        border: 20px solid black;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+
+    div.preloader img {
+        width: 40%;
+        height: 40%;
+    }
+
+    header.cabecalho {
+        width: 100%;
+        height: 60px;
+        position: fixed;
+        left: 50px;
+        display: flex;
+    }
+
+    div.logo {
+        width: 65px;
+        height: 100px;
+        margin: 0px 0px 0px -10px;
+        border-radius: 0 0 30px 0;
+        background-color: #2CCB69;
+    }
+
+    div.logo img {
+        display: block;
+        width: 45px;
+        margin: 40px auto;
+    }
+
+    nav.menu {
+        display: none;
+    }
+
+    div.background-web {
+        width: 100%;
+        height: 100vh;
+        background-color: #1c1c1c;
+        border: 20px solid black;
+    }
+
+    button.icon-contact {
+        width: 45px;
+        height: 45px;
+        background-color: #2CCB69;
+        background-image: url('../Images/icon-contact-close.svg');
+        background-repeat: no-repeat;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        z-index: 200;
+    }
+
+    div.box-contact {
+        width: 265px;
+        height: 150px;
+        position: fixed;
+        bottom: 110px;
+        right: 50px;
+        padding: 15px;
+        background-color: black;
+        color: #bcbcbc;
+        display: none;
+    }
+
+    div.box-icons {
+        display: block;
+        width: 90%;
+        height: 40px;
+        text-align: center;
+    }
+
+    .contact-icons {
+        display: inline-block;
+        margin: 10px 15px;
+    }
+
+    .box-corner {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        top: 0px;
+        bottom: 0;
+        left: 223px;
+        background-color: transparent;
+    }
+}
+
+@media screen and (min-width: 576px) {}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 992px) {
+    nav.menu {
+        display: table;
+        float: left;
+        width: 400px;
+        height: 60px;
+    }
+
+    nav.menu a {
+        display: inline-block;
+        margin: 38px 10px 0 20px;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        color: #bcbcbc;
+        position: relative;
+    }
+
+    nav.menu a:hover {
+        color: #2ccb69;
+    }
+
+    nav.menu a:before {
+        content: '';
+        width: 0%;
+        height: 4px;
+        background-color: #2CCB69;
+        display: block;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        transition: all 0.2s ease-out;
+    }
+
+    nav.menu a:hover::before {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {}
+
+
+/* MEDIA UTILITY */
+
+.font-apply-1 {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.7em;
+}
+
+.font-apply-2 {
+    font-family: 'Abril Fatface', serif;
+    font-weight: normal;
+}
+
+.apply-color-green {
+    color: #2CCB69;
+}
+
+.apply-color-gray {
+    color: #bcbcbc;
+}
+
+.apply-mar-top-15 {
+    margin-top: 15px;
+}
+
+.apply-mar-right-15 {
+    margin-right: 15px;
+}
+
+.apply-mar-bottom-15 {
+    margin-bottom: 15px;
+}
+
+.apply-mar-left-15 {
+    margin-left: 15px;
+}
+
+/* MEDIAS DE USABILIDADES */
+
+.is-open {
+    display: block !important;
+}
+
+.icon-contact-move {
+    background-position-y: -45px;
+}
+
+.opacity-auto {
+    animation: fadeOut forwards 2s ease-out;
+}
