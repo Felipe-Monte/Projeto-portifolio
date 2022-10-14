@@ -1,11 +1,11 @@
 var btnContact = document.querySelector('.icon-contact');
 
 // Sumir preLoader enquanto carrega a página.
-window.addEventListener('load', function(){
+window.addEventListener('load', function () {
     var preLoader = document.querySelector('.preloader');
     preLoader.classList.add('opacity-auto')
 
-    setTimeout(function(){
+    setTimeout(function () {
         preLoader.style.display = 'none'
     }, 2000)
 })
@@ -16,3 +16,4 @@ btnContact.addEventListener('click', function () {
     boxContact.classList.toggle('is-open');
     this.classList.toggle('icon-contact-move')
 });
+
