@@ -18,7 +18,7 @@ btnContact.addEventListener('click', function () {
     this.classList.toggle('icon-contact-move')
 });
 
-//Aparecer com modal e overlay.
+//Aparecer e fechar com modal e overlay ao clicar, e add anim.
 for(var i = 0; i < closeItens.length; i++){
     closeItens[i].addEventListener('click', function(){
         var overlay = document.querySelector('.overlay')
