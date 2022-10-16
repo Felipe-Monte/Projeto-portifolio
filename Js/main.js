@@ -1,4 +1,5 @@
 var btnContact = document.querySelector('.icon-contact');
+var closeItens = document.querySelectorAll('.close-itens')
 
 // Sumir preLoader enquanto carrega a página.
 window.addEventListener('load', function () {
@@ -16,4 +17,17 @@ btnContact.addEventListener('click', function () {
     boxContact.classList.toggle('is-open');
     this.classList.toggle('icon-contact-move')
 });
+
+//Aparecer com modal e overlay.
+for(var i = 0; i < closeItens.length; i++){
+    closeItens[i].addEventListener('click', function(){
+        var overlay = document.querySelector('.overlay')
+        var modal = document.querySelector('.modal')
+
+        overlay.classList.toggle('is-open')
+        modal.classList.toggle('is-open')
+        modal.classList.toggle('animation-modal')
+    })
+}
+
 
