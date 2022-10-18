@@ -4,13 +4,13 @@ var closeItens = document.querySelectorAll('.close-itens')
 // force page up.
 window.onbeforeunload = function () {
     window.scrollTo(0, 0);
-  }
+}
 
 // fade preloader while loading the page.
 window.addEventListener('load', function () {
     var preLoader = document.querySelector('.preloader');
     preLoader.classList.add('opacity-auto')
-    
+
     setTimeout(function () {
         preLoader.style.display = 'none'
     }, 2000)
@@ -24,8 +24,8 @@ btnContact.addEventListener('click', function () {
 });
 
 // Appear and close with modal and overlay when clicked, and add animation.
-for(var i = 0; i < closeItens.length; i++){
-    closeItens[i].addEventListener('click', function(){
+for (var i = 0; i < closeItens.length; i++) {
+    closeItens[i].addEventListener('click', function () {
         var overlay = document.querySelector('.overlay')
         var modal = document.querySelector('.modal')
 
@@ -35,10 +35,10 @@ for(var i = 0; i < closeItens.length; i++){
     })
 }
 
-// appear with the down arrow when you scroll the page.
-window.addEventListener('scroll', function(){
+// Disappear with the down arrow when you scroll the page.
+window.addEventListener('scroll', function () {
     var arrowDown = document.querySelector('.slide-bottom')
-    if (window.scrollY > 500 ) {
+    if (window.scrollY > 200) {
         arrowDown.classList.add('opacity-new')
     } else {
         arrowDown.classList.remove('opacity-new')

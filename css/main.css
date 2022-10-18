@@ -17,7 +17,7 @@
 
 @keyframes modalAnim {
     to {
-        top: 25%;
+        top: 15%;
     }
 }
 
@@ -375,7 +375,6 @@
 
 
 /* MEDIA UTILITY */
-
 .font-apply-1 {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.7em;
@@ -443,7 +442,6 @@
 }
 
 /* CLASS JS */
-
 .opacity-new {
     opacity: 0;
     transition: all 1s ease-out;
