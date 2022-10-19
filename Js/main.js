@@ -2,9 +2,9 @@ var btnContact = document.querySelector('.icon-contact');
 var closeItens = document.querySelectorAll('.close-itens')
 
 // force page up.
-window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
-}
+// window.onbeforeunload = function () {
+//     window.scrollTo(0, 0);
+// }
 
 // fade preloader while loading the page.
 window.addEventListener('load', function () {
