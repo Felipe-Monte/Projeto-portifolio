@@ -35,6 +35,7 @@ for (var i = 0; i < closeItens.length; i++) {
     })
 }
 
+
 // Disappear with the down arrow when you scroll the page.
 window.addEventListener('scroll', function () {
     var arrowDown = document.querySelector('.slide-bottom')

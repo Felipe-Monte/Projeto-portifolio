@@ -17,7 +17,7 @@
 
 @keyframes modalAnim {
     to {
-        top: 15%;
+        top: 25%;
     }
 }
 
@@ -150,6 +150,9 @@
         border: none;
         display: block;
         margin-top: 10px;
+        cursor: pointer;
+        text-align: center;
+        line-height: 32px;
     }
 
     .btn-close {
@@ -278,8 +281,27 @@
         width: 100%;
         height: 50px;
         border-radius: 0 25px 25px 0;
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: #2c2c2c;
+    }
+
+    .next-prev-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    ion-icon {
+        font-size: 34px;
+        color: #1a6939;
+        cursor: pointer;
+      }
+
+    #next-prev-text {
+        font-size: 17px;
     }
 
     .slide-bottom {
@@ -327,6 +349,7 @@
         border: none;
         display: block;
         margin-top: 20px;
+        cursor: pointer;
     }
 
     .btn-medium:hover {
