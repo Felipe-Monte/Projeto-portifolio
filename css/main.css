@@ -232,7 +232,7 @@
     }
 
     .text-navigation span {
-        font-size: 120px;
+        font-size: 80px;
         font-weight: 600;
         font-family: 'Open sans', sans-serif;
         position: relative;
@@ -263,17 +263,16 @@
     }
 
     .navigation-link a {
-        content: '';
         width: 10px;
         height: 2px;
         background-color: #4d4c4c;
-        margin: 50px 0 65px 30px;
+        margin: 30px;
         display: block;
     }
 
     .navigation-link a.link-active {
         display: block;
-        width: 90px;
+        width: 50px;
         background-color: #2CCB69;
     }
 
