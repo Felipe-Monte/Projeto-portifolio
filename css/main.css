@@ -297,7 +297,7 @@
         font-size: 34px;
         color: #1a6939;
         cursor: pointer;
-      }
+    }
 
     #next-prev-text {
         font-size: 17px;
@@ -450,10 +450,51 @@
         width: 100%;
     }
 
+
 }
 
 @media screen and (min-width: 1200px) {}
 
+@media screen and (min-width: 1364px) {
+    /* MEDIA SCREEN FOR NOTEBOOK FULL HD */
+
+    .text-navigation span {
+        font-size: 80px;
+    }
+
+    .navigation-second-section {
+        top: 220px;
+    }
+
+    .navigation-link a {
+        margin: 20px 0px 30px 30px;
+    }
+
+    .navigation-link a.link-active {
+        width: 50px;
+    }
+
+}
+
+@media screen and (min-width: 1400px) {
+
+    /* MEDIA SCREEN FOR DESKTOP MONITOR */
+    .text-navigation span {
+        font-size: 120px;
+    }
+
+    .navigation-second-section {
+        top: 250px;
+    }
+
+    .navigation-link a {
+        margin: 50px 0px 30px 30px;
+    }
+
+    .navigation-link a.link-active {
+        width: 90px;
+    }
+}
 
 /* MEDIA UTILITY */
 .font-apply-1 {
