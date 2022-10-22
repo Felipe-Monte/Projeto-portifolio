@@ -458,20 +458,32 @@
 @media screen and (min-width: 1364px) {
     /* MEDIA SCREEN FOR NOTEBOOK FULL HD */
 
+    /* MODAL */
+    @keyframes modalAnim {
+        to {
+            top: 15%;
+        }
+    }
+
+    /* NAV ASIDE */
     .text-navigation span {
         font-size: 80px;
     }
 
+    .text-navigation span::before {
+        width: 20px;
+    }
+
     .navigation-second-section {
-        top: 220px;
+        top: 210px;
     }
 
     .navigation-link a {
-        margin: 20px 0px 30px 30px;
+        margin: 20px 0px 30px 20px;
     }
 
     .navigation-link a.link-active {
-        width: 50px;
+        width: 60px;
     }
 
 }
@@ -509,13 +521,13 @@
 
 /* TEXT SIZE */
 .font-size-1 {
-    font-size: 7em;
+    font-size: 5em;
     display: block;
     margin-bottom: -20px;
 }
 
 .font-size-2 {
-    font-size: 1em;
+    font-size: 14px;
     text-align: left;
 }
 
