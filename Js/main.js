@@ -47,5 +47,20 @@ window.addEventListener('scroll', function () {
 
 })
 
+// Dinamic width 
+var containerMenu = document.querySelector('.container-menu')
+var containerUl = document.querySelector('.container-ul')
+var containerList = document.querySelectorAll('.container-list')
 
+var btnNext = document.querySelector('#back-stage')
+var btnBack = document.querySelector('#next-stage')
+
+// getting dynamic width of parent element (col-sm-10)
+var containerWidth = containerMenu.parentElement.offsetWidth
+
+containerMenu.style.width = containerWidth + 'px'
+
+for (var p = 0; p < containerList.length; p++) {
+    containerList[p].style.width = containerWidth + 'px'
+}
 

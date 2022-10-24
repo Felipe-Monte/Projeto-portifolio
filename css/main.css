@@ -303,6 +303,27 @@
         font-size: 17px;
     }
 
+    /* SIDE MENU */
+    .container-menu {
+        height: 600px;
+        background-color: white;
+    }
+
+    .container-ul {
+        width: auto;
+        height: 500px;
+        display: block;
+        background-color: palevioletred;
+        list-style: none;
+    }
+
+    .container-list {
+        float: left;
+        height: 500px;
+        list-style: none;
+    }
+
+
     .slide-bottom {
         display: table;
         width: 60px;
@@ -540,6 +561,31 @@
 .apply-color-gray {
     color: #bcbcbc;
 }
+
+.back1 {
+    background-color: yellow;
+}
+
+.back2 {
+    background-color: red;
+}
+
+.back3 {
+    background-color: green;
+}
+
+.back4 {
+    background-color: purple;
+}
+
+.back5 {
+    background-color: blue;
+}
+
+.back6 {
+    background-color: maroon;
+}
+
 
 /* MARGIN */
 .apply-mar-top-15 {
