@@ -307,11 +307,13 @@
     .container-menu {
         height: 600px;
         background-color: white;
+        overflow: hidden;
+        margin-top: 200px;
     }
 
     .container-ul {
         width: auto;
-        height: 500px;
+        height: 700px;
         display: block;
         background-color: palevioletred;
         list-style: none;
@@ -514,6 +516,10 @@
     /* MEDIA SCREEN FOR DESKTOP MONITOR */
     .text-navigation span {
         font-size: 120px;
+    }
+
+    .text-navigation span::before {
+        width: 35px;  
     }
 
     .navigation-second-section {

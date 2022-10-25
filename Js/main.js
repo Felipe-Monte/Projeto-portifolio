@@ -51,9 +51,9 @@ window.addEventListener('scroll', function () {
 var containerMenu = document.querySelector('.container-menu')
 var containerUl = document.querySelector('.container-ul')
 var containerList = document.querySelectorAll('.container-list')
+var sliderListWidth = null
 
-var btnNext = document.querySelector('#back-stage')
-var btnBack = document.querySelector('#next-stage')
+
 
 // getting dynamic width of parent element (col-sm-10)
 var containerWidth = containerMenu.parentElement.offsetWidth
@@ -62,5 +62,41 @@ containerMenu.style.width = containerWidth + 'px'
 
 for (var p = 0; p < containerList.length; p++) {
     containerList[p].style.width = containerWidth + 'px'
-}
+    var sliderItemWidth = containerList[p].offsetWidth;
 
+    sliderListWidth += sliderItemWidth
+}
+containerUl.style.width = sliderListWidth + 'px'
+
+// making the animation of slider onClick  
+var btnBack = document.querySelector('#back-stage')
+var btnNext = document.querySelector('#next-stage')
+var sliderPos = 0
+
+btnNext.addEventListener('click', function () {
+    var lastItem = sliderListWidth - containerWidth
+
+    // transforming 'sliderPos' in positive
+    if (-1 * (sliderPos) === lastItem) {
+        return;
+    }
+
+    sliderPos -= containerWidth
+    anime({
+        targets: containerList,
+        translateX: sliderPos
+    });
+})
+
+btnBack.addEventListener('click', function () {
+
+    if (sliderPos === 0) {
+        return;
+    }
+
+    sliderPos += containerWidth
+    anime({
+        targets: containerList,
+        translateX: sliderPos
+    });
+})   
