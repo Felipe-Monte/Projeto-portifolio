@@ -305,15 +305,15 @@
 
     /* SIDE MENU */
     .container-menu {
-        height: 600px;
+        height: 500px;
         background-color: white;
         overflow: hidden;
-        margin-top: 200px;
+        margin-top: 100px;
     }
 
     .container-ul {
         width: auto;
-        height: 700px;
+        height: 400px;
         display: block;
         background-color: palevioletred;
         list-style: none;
