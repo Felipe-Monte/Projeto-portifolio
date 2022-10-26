@@ -305,7 +305,7 @@
 
     /* SIDE MENU */
     .container-menu {
-        height: 500px;
+        height: 800px;
         background-color: white;
         overflow: hidden;
         margin-top: 100px;
@@ -313,7 +313,7 @@
 
     .container-ul {
         width: auto;
-        height: 400px;
+        height: 800px;
         display: block;
         background-color: palevioletred;
         list-style: none;
@@ -321,7 +321,7 @@
 
     .container-list {
         float: left;
-        height: 500px;
+        height: 800px;
         list-style: none;
     }
 
@@ -512,6 +512,13 @@
 }
 
 @media screen and (min-width: 1400px) {
+
+    /* MODAL */
+    @keyframes modalAnim {
+        to {
+            top: 25%;
+        }
+    }
 
     /* MEDIA SCREEN FOR DESKTOP MONITOR */
     .text-navigation span {
