@@ -13,6 +13,8 @@ var spanFirst = document.querySelector('.span-first')
 var spanSecond = document.querySelector('.span-second')
 var currentCounter = 1
 
+var navData = document.querySelectorAll('.navigation-link a')
+
 
 // getting dynamic width of parent element (col-sm-10)
 var containerWidth = containerMenu.parentElement.offsetWidth
@@ -82,6 +84,37 @@ var counterRemove = function () {
 
 }
 
+//Active span 
+var activeSpan = function () {
+    for (var nv = 0; nv < navData.length; nv++) {
+        var getData = parseInt(navData[nv].getAttribute('data-nav'))
+
+        if (getData === currentCounter) {
+            navData[nv].classList.add('link-active')
+        }
+        anime({
+            targets: '.link-active',
+            width: 90
+        });
+    }
+
+}
+
+//Remove span 
+var removeSpan = function () {
+    for (var rm = 0; rm < navData.length; rm++) {
+        navData[rm].classList.remove('link-active')
+
+        anime({
+            targets: navData[rm],
+            width: 20
+        });
+    }
+
+    activeSpan()
+}
+
+
 
 //Actions
 spanSecond.innerHTML = addZero(slideTotal);
@@ -91,9 +124,11 @@ spanSecond.innerHTML = addZero(slideTotal);
 btnNext.addEventListener('click', function () {
     animNext()
     counterAdd()
+    removeSpan()
 })
 
 btnBack.addEventListener('click', function () {
     animBack()
     counterRemove()
+    removeSpan()
 })   
