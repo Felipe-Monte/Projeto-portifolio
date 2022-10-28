@@ -303,10 +303,17 @@
         font-size: 17px;
     }
 
+    /**/
+    .box-text-main {
+        display: table;
+        margin-top: 110px;
+        padding: 10px;
+    }
+
     /* SIDE MENU */
     .container-menu {
-        height: 84vh;
-        background-color: white;
+        width: 100%;
+        height: calc(90% - 20px);
         overflow: hidden;
         margin-top: 100px;
         position: relative;
@@ -314,9 +321,8 @@
     }
 
     .container-ul {
-        height: 500px;
+        height: 84vh;
         display: block;
-        background-color: palevioletred;
         list-style: none;
     }
 
@@ -527,7 +533,7 @@
     }
 
     .text-navigation span::before {
-        width: 35px;  
+        width: 35px;
     }
 
     .navigation-second-section {
