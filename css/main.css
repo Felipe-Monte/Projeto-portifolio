@@ -305,14 +305,15 @@
 
     /* SIDE MENU */
     .container-menu {
-        height: 500px;
+        height: 84vh;
         background-color: white;
         overflow: hidden;
         margin-top: 100px;
+        position: relative;
+        right: 15px;
     }
 
     .container-ul {
-        width: auto;
         height: 500px;
         display: block;
         background-color: palevioletred;
@@ -321,7 +322,7 @@
 
     .container-list {
         float: left;
-        height: 500px;
+        height: 84vh;
         list-style: none;
     }
 
