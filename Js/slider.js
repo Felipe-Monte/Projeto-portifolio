@@ -14,7 +14,7 @@ var spanSecond = document.querySelector('.span-second')
 var currentCounter = 1
 
 var navData = document.querySelectorAll('.navigation-link a')
-
+var spanNum = document.querySelector('.text-navigation span')
 
 // getting dynamic width of parent element (col-sm-10)
 var containerWidth = containerMenu.parentElement.offsetWidth
@@ -71,6 +71,7 @@ var counterAdd = function () {
     if (currentCounter >= 0 && currentCounter < slideTotal) {
         currentCounter++
         spanFirst.innerHTML = addZero(currentCounter)
+        spanNum.innerHTML = addZero(currentCounter)
     }
 
 }
@@ -80,6 +81,7 @@ var counterRemove = function () {
     if (currentCounter > 1 && currentCounter <= slideTotal) {
         currentCounter--
         spanFirst.innerHTML = addZero(currentCounter)
+        spanNum.innerHTML = addZero(currentCounter)
     }
 
 }
