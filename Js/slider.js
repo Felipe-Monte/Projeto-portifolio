@@ -41,7 +41,8 @@ var animNext = function () {
     sliderPos -= containerWidth
     anime({
         targets: containerList,
-        translateX: sliderPos
+        translateX: sliderPos,
+        easing: 'cubicBezier(0,0.01,.32,1)'
     });
 }
 
@@ -53,7 +54,8 @@ var animBack = function () {
     sliderPos += containerWidth
     anime({
         targets: containerList,
-        translateX: sliderPos
+        translateX: sliderPos,
+        easing: 'cubicBezier(0,0.01,.32,1)'
     });
 }
 
@@ -102,6 +104,19 @@ var activeSpan = function () {
 
 }
 
+
+//Active Slide span 
+var activeSlide = function () {
+    for (var sld = 0; sld < containerList.length; sld++) {
+        var mySlideNum = parseInt(containerList[sld].getAttribute('data-slide'))
+
+        if (mySlideNum === currentCounter) {
+            containerList[sld].classList.add('slide-active')
+        }
+    }
+
+}
+
 //Remove span 
 var removeSpan = function () {
     for (var rm = 0; rm < navData.length; rm++) {
@@ -113,7 +128,12 @@ var removeSpan = function () {
         });
     }
 
+    for (var rms = 0; rms < containerList.length; rms++) {
+        containerList[rms].classList.remove('slide-active')    
+    }
+
     activeSpan()
+    activeSlide()
 }
 
 
